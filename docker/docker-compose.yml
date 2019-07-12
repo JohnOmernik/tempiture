@@ -1,0 +1,49 @@
+version: "2"
+services:
+    graphite:
+        image: easypi/graphite-arm
+        restart: always
+        ports:
+            - "2003:2003"
+            - "2004:2004"
+            - "7002:7002"
+            - "8080:8080"
+            - "9001:9001"
+        volumes:
+            - "/home/pi/tempiture/graphite/storage/whisper/:/opt/graphite/storage/whisper"
+            - "/home/pi/tempiture/graphite/storage/log/:/opt/graphite/storage/log"
+            - "/home/pi/tempiture/graphite/storage/log/webapp/:/opt/graphite/storage/log/webapp"
+        networks:
+            - webnet
+    grafana:
+        image: easypi/grafana-arm
+        restart: always
+        ports:
+            - "3000:3000"
+        environment:
+            - GF_AUTH_ANONYMOUS_ENABLED=true
+        volumes:
+            - "/home/pi/tempiture/grafana/data:/var/lib/grafana"
+            - "/home/pi/tempiture/grafana/etc:/etc/grafana"
+        networks:
+            - webnet
+    tempiture:
+        image: tempiture/rasppy3
+        env_file:
+        - /home/pi/tempiture/env.list.docker
+        ports:
+            - "5000:5000"
+        restart: always
+        command: python3 /app/tempiture.py
+        volumes: 
+            - "/home/pi/tempiture/data:/app/data"
+        devices:
+            - /dev/spidev0.0
+            - /dev/spidev0.1
+            - /dev/mem
+            - /dev//i2c-1
+        privileged: true
+        networks:
+            - webnet
+networks:
+    webnet:

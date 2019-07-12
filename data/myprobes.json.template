@@ -1,0 +1,22 @@
+[
+    {
+        "name": "chamber1", 
+        "readings": [
+        ]
+    }, 
+    {
+        "name": "chamber2", 
+        "readings": [
+        ]
+    }, 
+    {
+        "name": "meat1", 
+        "readings": [
+        ]
+    }, 
+    {
+        "name": "meat2", 
+        "readings": [
+        ]
+    }
+]

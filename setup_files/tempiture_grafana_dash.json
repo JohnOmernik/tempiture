@@ -1,0 +1,950 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Tempiture Dashboard",
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "panels": [
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(43, 158, 23)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "tempiture-graphite",
+      "decimals": null,
+      "format": "farenheit",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 0
+      },
+      "id": 3,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.chamber1.temperature"
+        }
+      ],
+      "thresholds": "160,205",
+      "title": "chamber1",
+      "type": "singlestat",
+      "valueFontSize": "150%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(43, 158, 23)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "tempiture-graphite",
+      "decimals": null,
+      "format": "farenheit",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 3,
+        "y": 0
+      },
+      "id": 12,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.chamber_avg.temperature"
+        }
+      ],
+      "thresholds": "160,205",
+      "title": "Chamber Average",
+      "type": "singlestat",
+      "valueFontSize": "150%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "rgba(237, 129, 40, 0.89)",
+        "#299c46"
+      ],
+      "datasource": "tempiture-graphite",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 6,
+        "y": 0
+      },
+      "hideTimeOverride": true,
+      "id": 11,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.gas.mode"
+        }
+      ],
+      "thresholds": "0,1",
+      "timeFrom": "5m",
+      "title": "Temperature Mode",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "Manual",
+          "value": "0"
+        },
+        {
+          "op": "=",
+          "text": "Auto",
+          "value": "1"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(59, 180, 38)",
+        "rgba(214, 0, 0, 0.97)"
+      ],
+      "datasource": "tempiture-graphite",
+      "format": "farenheit",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 9,
+        "y": 0
+      },
+      "id": 4,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.meat1.temperature"
+        }
+      ],
+      "thresholds": "110,160",
+      "title": "meat1",
+      "transparent": false,
+      "type": "singlestat",
+      "valueFontSize": "150%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "content": "<SCRIPT>\nvar myGloc = window.location.protocol + \"//\" + window.location.hostname + \":5000\";\nvar myGSet = myGloc + \"/setgas/\";\nvar myGMove = myGloc + \"/movegas/\";\n</SCRIPT>\n<CENTER>\n<TABLE>\n<TR><TD colspan=6><CENTER><H2>Set Gas Level</H2></CENTER></TD></TR>\n<TR>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGSet + '0');\">0%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGSet + '25');\">25%</button></TD>\n<TD colspan=2><CENTER><button style=\"color:black\" onclick=\"$.ajax(myGSet + '50');\">50%</button></CENTER></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGSet + '75');\">75%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGSet + '100');\">100%</button></TD>\n</TR>\n<TR><TD colspan=6><CENTER><H2>Move Gas Level</H2></CENTER></TD></TR>\n<TR>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGMove + '-25');\">-25%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGMove + '-10');\">-10%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGMove + '-1');\">-1%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGMove + '1');\">+1%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGMove + '10');\">+10%</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myGMove + '25');\">+25%</button></TD>\n</TABLE>\n</CENTER>\n\n\"\"",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 9,
+      "links": [],
+      "mode": "html",
+      "title": "Manual Mode Controls",
+      "type": "text"
+    },
+    {
+      "content": "<SCRIPT>\nvar myTloc = window.location.protocol + \"//\" + window.location.hostname + \":5000\";\nvar myTSet = myTloc + \"/settarget/\";\nvar myTMove = myTloc + \"/movetarget/\";\nvar myTAuto = myTloc + \"/setauto\";\n\n</SCRIPT>\n<CENTER>\n<TABLE>\n<TR><TD colspan=2><CENTER><H2>Target Temp</H2></CENTER></TD><TD colspan=\"4\"><CENTER><button style=\"font-size: larger; color:black\" onclick=\"$.ajax(myTAuto);\">Toggle Auto</button></CENTER></TD></TR>\n<TR>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTSet + '140');\">140</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTSet + '160');\">160</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTSet + '180');\">180</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTSet + '200');\">200</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTSet + '220');\">220</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTSet + '240');\">240</button></TD>\n</TR>\n<TR><TD colspan=6><CENTER><H2>Move Target Temp</H2></CENTER></TD></TR>\n<TR>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTMove + '-10');\">-10</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTMove + '-5');\">-5</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTMove + '-1');\">-1</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTMove + '1');\">+1</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTMove + '5');\">+5</button></TD>\n<TD><button style=\"color:black\" onclick=\"$.ajax(myTMove + '10');\">+10</button></TD>\n</TABLE>\n</CENTER>\n\n",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 14,
+      "links": [],
+      "mode": "html",
+      "title": "Auto Mode Temp Controls",
+      "type": "text"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(43, 158, 23)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "tempiture-graphite",
+      "format": "farenheit",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 3
+      },
+      "id": 6,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.chamber2.temperature"
+        }
+      ],
+      "thresholds": "160,205",
+      "title": "chamber2",
+      "type": "singlestat",
+      "valueFontSize": "150%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(43, 158, 23)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "tempiture-graphite",
+      "format": "percent",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": true,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 3,
+        "y": 3
+      },
+      "hideTimeOverride": true,
+      "id": 7,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": "100",
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": true
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.gas.level"
+        }
+      ],
+      "thresholds": "50,80",
+      "timeFrom": "5m",
+      "title": "Gas Level",
+      "type": "singlestat",
+      "valueFontSize": "110%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(43, 158, 23)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "tempiture-graphite",
+      "decimals": null,
+      "format": "farenheit",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 6,
+        "y": 3
+      },
+      "hideTimeOverride": true,
+      "id": 13,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.chamber_avg.target"
+        }
+      ],
+      "thresholds": "160,205",
+      "timeFrom": "5m",
+      "title": "Chamber Target",
+      "type": "singlestat",
+      "valueFontSize": "150%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": false,
+      "colors": [
+        "rgb(80, 80, 80)",
+        "rgb(43, 158, 23)",
+        "rgba(245, 54, 54, 0.9)"
+      ],
+      "datasource": "tempiture-graphite",
+      "format": "farenheit",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 9,
+        "y": 3
+      },
+      "id": 5,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "refId": "A",
+          "target": "data.meat2.temperature"
+        }
+      ],
+      "thresholds": "100,160",
+      "title": "meat2",
+      "type": "singlestat",
+      "valueFontSize": "150%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "tempiture-graphite",
+      "fill": 1,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 6
+      },
+      "id": 1,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "hide": false,
+          "refCount": 0,
+          "refId": "A",
+          "target": "alias(exponentialMovingAverage(data.chamber_avg.temperature, 10), 'chamber_avg')",
+          "textEditor": true
+        },
+        {
+          "refCount": 0,
+          "refId": "B",
+          "target": "alias(exponentialMovingAverage(data.chamber_avg.target, 1), 'target')",
+          "textEditor": true
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Target Graph",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "farenheit",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "tempiture-graphite",
+      "fill": 1,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 6
+      },
+      "id": 21,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "hide": false,
+          "refCount": 0,
+          "refId": "A",
+          "target": "alias(exponentialMovingAverage(data.chamber1.temperature, 10), 'chamber1')",
+          "textEditor": true
+        },
+        {
+          "refCount": 0,
+          "refId": "B",
+          "target": "alias(exponentialMovingAverage(data.chamber2.temperature, 10), 'chamber2')",
+          "textEditor": true
+        },
+        {
+          "refCount": 0,
+          "refId": "C",
+          "target": "alias(exponentialMovingAverage(data.meat1.temperature, 10), 'meat1')",
+          "textEditor": true
+        },
+        {
+          "refCount": 0,
+          "refId": "D",
+          "target": "alias(exponentialMovingAverage(data.meat2.temperature, 10), 'meat2')",
+          "textEditor": true
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Probe Temperatures",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "content": "<SCRIPT>\nvar myloc = window.location.protocol + \"//\" + window.location.hostname + \":5000\";\nvar myGet = myloc + \"/getlabel\";\nvar mySet = myloc + \"/setlabel/\";\n</SCRIPT>\n<TABLE> \n<TR>\n  <TD colspan=1>Smoke Labeling: All Data from this smoke will be tagged with the name you give it here:</TD>\n  <TD><INPUT id=\"smokelabel\" type=\"textbox\" value=\"\"></INPUT></TD>\n</TR>\n<TR>\n  <TD colspan=1>\n    <IFRAME width=\"350\" style=\"color:white\" id=\"myiframe\" src=\"\"></IFRAME></CENTER>\n  </TD>\n  <TD>\n    <button style=\"color:black\" onclick=\"$.ajax(mySet + $('#smokelabel').val()); $('#smokelabel').val('') ;\">Set Label</button>\n  </TD>\n</TR>\n</TABLE>\n<SCRIPT>\ndocument.getElementById(\"myiframe\").src = myGet;\nsetInterval(function (){\nvar iframe = document.getElementById(\"myiframe\");\niframe.src = iframe.src;\n}, 5000);\n</SCRIPT>\n\n\n\n\n\n",
+      "gridPos": {
+        "h": 8,
+        "w": 7,
+        "x": 0,
+        "y": 15
+      },
+      "id": 18,
+      "links": [],
+      "mode": "html",
+      "title": "Smoke Label",
+      "type": "text"
+    },
+    {
+      "content": "<SCRIPT>\nvar myNloc = window.location.protocol + \"//\" + window.location.hostname + \":5000\";\nvar myNGet = myNloc + \"/getnotes\";\nvar myNSave = myNloc + \"/savenote/\";\n</SCRIPT>\n<TABLE> \n<TR>\n  <TD colspan=2>\n    You can you use this to save simple notes about your smoke. The Smoke Label and Time of Note are automatically included as part of the saved note.\n  </TD>\n</TR>\n<TR>\n  <TD>\n    <INPUT id=\"smokenote\" type=\"textbox\" size=\"180\" value=\"\"></INPUT>\n  </TD>\n  <TD><button style=\"color:black\" onclick=\"$.ajax(myNSave + $('#smokenote').val()); $('#smokenote').val('') ;\">SaveNote</button></TD>\n</TR>\n<TR>\n  <TD colspan=2>\n    <IFRAME width=\"1150\" style=\"color:white\" id=\"noteiframe\" src=\"\"></IFRAME>\n  </TD>\n</TR>\n</TABLE>\n<SCRIPT>\ndocument.getElementById(\"noteiframe\").src = myNGet;\nsetInterval(function (){\nvar iframe = document.getElementById(\"noteiframe\");\niframe.src = iframe.src;\n}, 10000);\n</SCRIPT>\n\n",
+      "gridPos": {
+        "h": 8,
+        "w": 17,
+        "x": 7,
+        "y": 15
+      },
+      "id": 20,
+      "links": [],
+      "mode": "html",
+      "title": "Smoke Notes",
+      "type": "text"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 16,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-3h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "",
+  "title": "Tempiture",
+  "uid": "kUGkvNzRk",
+  "version": 16
+}
